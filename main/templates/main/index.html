@@ -1,0 +1,28 @@
+{% extends 'main/layout.html' %} {% block title %}{{ title }}{% endblock %} {%block content %}
+<div class="features main_page">
+    <div class="intro">
+        <div class="video">
+            {% load static %}
+     <video
+             src="{% static 'main/video/neon.mp4'  %}" class = "video_media" autoplay muted loop>
+     </video>
+
+        </div>
+        <div class = "intro_content">
+                <div class="container">
+                    <h1>У самурая нет цели, есть только путь.</h1>
+                  <p>
+                    Хотите начать свой путь в IT? <br />
+                    Данный сайт предназначен для того, чтобы помочь начинающему программисту
+                    найти свой путь обучения, по которому он будет двигаться.
+                  </p>
+                  <a href="{% url 'maps' %}" target="_self" class="btn btn-primary">
+                    Начать путь
+                  </a>
+                </div>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
