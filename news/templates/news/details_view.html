@@ -1,0 +1,15 @@
+{% extends 'main/layout.html' %}
+{% block title %}Новости{% endblock %}
+{% block content %}
+    <div class="border">
+  <div class="border-b bg-#2c2c2c pb-5 pt-6 sm:pb-10 sm:pt-12">
+    <div class="container">
+      <h1>{{ article.title }}</h1>
+        <p>{{ article.date }}</p>
+      <p>
+        {{ article.full_text }}
+      </p>
+    </div>
+  </div>
+</div>SS
+{% endblock %}

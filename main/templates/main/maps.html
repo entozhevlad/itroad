@@ -1,4 +1,5 @@
-{% extends 'main/layout.html' %} {% block title %}Дорожные карты{% endblock %}
+{% extends 'main/layout.html' %}
+{% block title %}Дорожные карты{% endblock %}
 {% block content %}
 <div class="border">
   <div class="border-b bg-#2c2c2c pb-5 pt-6 sm:pb-10 sm:pt-12">
@@ -12,6 +13,7 @@
 </div>
 <div class="container my-5">
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+
       {% load static %}
       <a href = "{% static 'main/roadmaps/python.pdf' %}" target="_blank" >
     <div class="col-4">
@@ -143,7 +145,7 @@
         </div>
       </div>
     </div>
-      </a>>
+      </a>
   </div>
 </div>
 <div class="container">{% endblock %}</div>

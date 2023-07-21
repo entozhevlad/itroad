@@ -1,0 +1,30 @@
+{% extends 'main/layout.html' %}
+{% block title %}Новости{% endblock %}
+{% block content %}
+    <div class="border">
+  <div class="border-b bg-#2c2c2c pb-5 pt-6 sm:pb-10 sm:pt-12">
+    <div class="container">
+      <h1>Новости</h1>
+      <p>
+        На данной странцие публикуются статьи пользователей и новости из мира IT
+      </p>
+        <a href ='{% url 'create' %}'><button class="btn btn-info"><i class=" fas fa-plus-circle"></i>Добавить</button></a>
+    </div>
+  </div>
+</div>
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">{% if news %}
+            {% for el in news %}
+                <div class="alert alert-warning">
+                    <h3>{{ el.title }}</h3>
+                    <p>{{ el.anounce }}</p>
+                    <a href = '{% url 'news-detail' el.id %}' class="btn btn-warning">Читать детальнее</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>Новостей нет</p>
+        {% endif %} </div>
+
+
+    </div>
+{% endblock %}
