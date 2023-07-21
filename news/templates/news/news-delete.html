@@ -1,0 +1,24 @@
+{% extends 'main/layout.html' %}
+{% block title %}Новости{% endblock %}
+{% block content %}
+    <div class="border">
+  <div class="border-b bg-#2c2c2c pb-5 pt-6 sm:pb-10 sm:pt-12">
+    <div class="container">
+      <h1>Удалить статью</h1>
+      <p>
+        На данной странцие вы можете удалить статью
+      </p>
+        <a href ="{% url 'news-delete' article.id %}"><button class="btn btn-danger"><i class=" fas fa-plus-circle"></i>Удалить</button></a>
+    </div>
+  </div>
+</div>
+    <div class="container my-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+            <form method="post" >
+                {% csrf_token %}
+                <button class="btn btn-access" type="submit">Удалить статью</button>
+            </form>>
+
+        </div>
+    </div>
+{% endblock %}
