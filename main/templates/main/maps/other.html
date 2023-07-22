@@ -1,4 +1,4 @@
-]{% extends 'main/layout.html' %}
+{% extends 'main/layout.html' %}
 {% block title %}Дорожные карты{% endblock %}
 {% block content %}
 <div class="border">
@@ -6,8 +6,7 @@
     <div class="container">
       <h1>Дорожные карты</h1>
       <p>
-        Пошаговые дорожные карты самых популярных языков программирования, которые помогут изучить их синтаксис и технологии, используемые в связки с ними
-      </p>
+В этом разделе представлены разнообразные дорожные карты, охватывающие различные области информационных технологий. Здесь вы найдете планы развития для Computer Science, Docker, SQL и других технологий, которые позволят вам глубже понять и освоить различные аспекты IT-индустрии.      </p>
     </div>
   </div>
 </div>
@@ -15,72 +14,57 @@
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
 
       {% load static %}
-      <a href = "{% static 'main/roadmaps/python.pdf' %}" target="_blank" >
+      <a href = "{% static 'main/roadmaps/other/computer-science.pdf' %}" target="_blank" >
     <div class="col-4">
       <div class="card">
         {% load static %}
         <img
-          src="{% static 'main/img/cards/python.png' %}"
+          src="{% static 'main/img/cards/other/cs.png' %}"
           class="card-img-top"
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">Python</h5>
+          <h3 class="card-title">Computer Science</h3>
           <p class="card-text">
-            Высокоуровневый, интерпретируемый язык программирования, известный
-            своей простотой и читаемостью кода. Он идеально подходит для
-            начинающих программистов и тех, кто ценит лаконичность и быструю
-            разработку. Python часто используется в веб-разработке, анализе
-            данных, искусственном интеллекте и автоматизации задач.
-          </p>
+            Изучение проектирования, разработки и анализа компьютерных систем. Освоив алгоритмы и структуры данных, вы откроете перед собой множество возможностей в сфере информационных технологий. Подходит для тех, кто хочет решать сложные задачи, работать с данными и стать частью быстро развивающейся индустрии технологий.          </p>
         </div>
       </div>
     </div>
       </a>
         {% load static %}
-      <a href = "{% static 'main/roadmaps/c++.pdf' %}" target="_blank" >
+      <a href = "{% static 'main/roadmaps/other/sql.pdf' %}" target="_blank" >
     <div class="col-4">
       <div class="card">
         {% load static %}
         <img
-          src="{% static 'main/img/cards/c++.png' %}"
+          src="{% static 'main/img/cards/other/sql.jpeg' %}"
           class="card-img-top"
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">C++</h5>
+          <h3 class="card-title">SQL</h3>
           <p class="card-text"></p>
           <p class="card-text">
-            Мощный язык программирования, используемый для разработки системного
-            и прикладного программного обеспечения, а также игр и
-            высокопроизводительных приложений. Он привлекает опытных
-            разработчиков, которые ценят полный контроль над памятью и высокую
-            производительность своего кода.
-          </p>
+                Язык программирования для управления реляционными базами данных. Подходит для разработчиков, аналитиков данных и системных администраторов, кто хочет работать с базами данных и управлять информацией эффективно. Важный навык для работы с данными и обработки больших объемов информации.          </p>
         </div>
       </div>
     </div>
       </a>
         {% load static %}
-      <a href = "{% static 'main/roadmaps/c#.pdf' %}" target="_blank" >
+      <a href = "{% static 'main/roadmaps/other/docker.pdf' %}" target="_blank" >
     <div class="col-4">
       <div class="card">
         {% load static %}
         <img
-          src="{% static 'main/img/cards/c#.png' %}"
+          src="{% static 'main/img/cards/other/docker.jpeg' %}"
           class="card-img-top"
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">ASP .NET</h5>
+          <h3 class="card-title">Docker</h3>
           <p class="card-text"></p>
           <p class="card-text">
-            Платформа для веб-разработки от Microsoft, предоставляющая мощные
-            инструменты для создания динамических веб-приложений и веб-сайтов.
-            Он идеально подходит для разработчиков, которые хотят создавать
-            масштабируемые и безопасные веб-приложения с использованием языков
-            программирования C# или Visual Basic.
-          </p>
+                Docker — это платформа для разработки, доставки и запуска приложений в контейнерах.  Подходит для разработчиков, DevOps-инженеров, администраторов систем, и всех, кто хочет эффективно управлять и масштабировать приложения, упрощая развертывание и управление инфраструктурой.</p>
         </div>
       </div>
     </div>
@@ -88,64 +72,60 @@
   </div>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 roww-2">
       {% load static %}
-      <a href = "{% static 'main/roadmaps/java.pdf' %}" target="_blank" >
+      <a href = "{% static 'main/roadmaps/other/kubernetes.pdf' %}" target="_blank" >
     <div class="col-4">
       <div class="card">
         {% load static %}
         <img
-          src="{% static 'main/img/cards/java.png' %}"
+          src="{% static 'main/img/cards/other/kubernetes.png' %}"
           class="card-img-top"
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">Java</h5>
-          <p class="card-text">
-            Объектно-ориентированный язык программирования, популярный для создания кросс-платформенных приложений. Он привлекает разработчиков, которые стремятся к надежности и стабильности своих программ. Java широко используется в разработке мобильных приложений, корпоративных приложений и встроенных систем.
-          </p>
+          <h3 class="card-title">Kubernets</h3>
+          <p class="card-text"> Это открытая система автоматизации развертывания, масштабирования и управления контейнеризированными приложениями. Он предоставляет средства для упрощения оркестрации контейнеров, позволяя эффективно управлять кластерами приложений. Подходит для разработчиков, DevOps-инженеров и администраторов, кто стремится обеспечить бесперебойное развертывание и управление масштабируемыми приложениями в облачной среде или локально.</p>
         </div>
       </div>
     </div>
       </a>
       {% load static %}
-      <a href = "{% static 'main/roadmaps/go.pdf' %}" target="_blank" >
+      <a href = "{% static 'main/roadmaps/other/code-review.pdfo' %}" target="_blank" >
     <div class="col-4">
       <div class="card">
         {% load static %}
         <img
-          src="{% static 'main/img/cards/go.png' %}"
+          src="{% static 'main/img/cards/other/code.png' %}"
           class="card-img-top"
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">Go</h5>
+          <h3 class="card-title">Сode Review</h3>
           <p class="card-text"></p>
           <p class="card-text">
-            Язык программирования, разработанный Google, который сочетает производительность C++ с простотой и безопасностью Python. Он идеально подходит для создания высокоэффективных сетевых и веб-серверных приложений, а также программного обеспечения для распределенных систем.
-          </p>
+               Это процесс анализа и оценки программного кода, выполняемый коллегами или экспертами с целью обнаружения ошибок, улучшения качества кода и повышения производительности. Важный инструмент в разработке программного обеспечения, позволяющий обмениваться знаниями, учиться на ошибках и поддерживать высокий стандарт кодирования. Подходит тех, кто стремится к повышению надежности, улучшению сотрудничества и созданию лучшего программного продукта.          </p>
         </div>
       </div>
     </div>
       </a>
       {% load static %}
-      <a href = "{% static 'main/roadmaps/javascript.pdf' %}" target="_blank" >
+      <a href = "{% static 'main/roadmaps/other/software-design-architecture.pdf' %}" target="_blank" >
     <div class="col-4">
       <div class="card">
         {% load static %}
         <img
-          src="{% static 'main/img/cards/js.png' %}"
+          src="{% static 'main/img/cards/other/sys.png' %}"
           class="card-img-top"
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">JavaScript</h5>
+          <h3 class="card-title">System Design and Architecture</h3>
           <p class="card-text"></p>
-          <p class="card-text">
-            Язык программирования для веб-разработки, который добавляет интерактивность и динамические элементы на веб-страницы. Он идеально подходит для фронтенд-разработчиков, создающих интерактивные пользовательские интерфейсы и клиентские приложения. JavaScript также является неотъемлемой частью разработки современных веб-приложений и Single Page Applications (SPA).
-          </p>
-        </div>
+            <p class="card-text">Это процесс создания структуры ПО, определяющий компоненты, модули, интерфейсы и взаимодействия между ними. Целью является разработка гибкой и расширяемой архитектуры, которая обеспечивает эффективность разработки, обслуживания приложения. Подходит для программистов, архитекторов и технических лидеров, кто стремится создавать надежные и инновационные программные решения.</p>
       </div>
     </div>
+            </div>
       </a>
   </div>
 </div>
 <div class="container">{% endblock %}</div>
+
