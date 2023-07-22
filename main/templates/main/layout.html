@@ -17,7 +17,9 @@
       <link rel="stylesheet" href="{% static 'main/css/menu.css' %}" />
     <link rel="stylesheet" href="{% static 'main/css/cards.css' %}" />
       <link rel="stylesheet" href="{% static 'main/css/news.css' %}" />
+
     <script src="{%  static 'main/js/menu.js' %}"></script>
+
 
 
   <body>
@@ -43,7 +45,7 @@
         <li><a id="len4" class="hoverable" href="{% url 'about' %}">О нас</a></li>
       </ul>
         <ul class="nav navbar-nav">
-        <li clas="align-right"><a class="hoverable login" href="{% url 'profile' %}">Регистрация</a></li>
+        <li clas="align-right"><a class="hoverable login" href="{% url 'profile' %}">Профиль</a></li>
       </ul>
     </div>
   </nav>
@@ -52,6 +54,11 @@
 
     {% endblock %}
     </main>
+  <div class="footerContainer">
+      <div class="socialIcon">
+          <a href=""><i></i></a>
+      </div>
+  </div>
     <footer class="text-center text-white navbar-dark bg-dark">
       <div class="container pt-4">
         <!-- Section: Social media -->
@@ -59,55 +66,18 @@
           <!-- Facebook -->
           <a
             class="btn btn-link btn-floating btn-lg text-dark m-1"
-            href="#!"
+            href="https://t.me/aliquis21"
             role="button"
             data-mdb-ripple-color="dark"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
+            ><img src="{% static 'main/img/telegram.png' %}" alt="logo" width="50" /></a>
 
-          <!-- Twitter -->
-          <a
-            class="btn btn-link btn-floating btn-lg text-dark m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-twitter"></i
-          ></a>
-
-          <!-- Google -->
-          <a
-            class="btn btn-link btn-floating btn-lg text-dark m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-google"></i
-          ></a>
-
-          <!-- Instagram -->
-          <a
-            class="btn btn-link btn-floating btn-lg text-dark m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-instagram"></i
-          ></a>
-
-          <!-- Linkedin -->
-          <a
-            class="btn btn-link btn-floating btn-lg text-dark m-1"
-            href="#!"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="fab fa-linkedin"></i
-          ></a>
           <!-- Github -->
           <a
             class="btn btn-link btn-floating btn-lg text-dark m-1"
-            href="#!"
+            href="https://github.com/Aliquis22"
             role="button"
             data-mdb-ripple-color="dark"
-            ><i class="fab fa-github"></i
-          ></a>
+            ><img src="{% static 'main/img/github.png' %}" alt="logo" width="50"/></a>
         </section>
         <!-- Section: Social media -->
       </div>
@@ -116,11 +86,11 @@
       <!-- Copyright -->
       <div
         class="text-center text-white p-3"
-        style="background-color: rgba(0, 0, 0, 0.2)"
+        style="background-color: rgba(0, 0, 0)"
       >
         © 2023 Copyright:
-        <a class="text-white" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
+        <a class="text-white" href="https://itroad.com/"
+          >itroad.com</a
         >
       </div>
       <!-- Copyright -->

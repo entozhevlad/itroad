@@ -16,6 +16,12 @@ def about(request):
     return render(request, 'main/about.html')
 def maps(request):
     return render(request, 'main/maps.html')
+def languages(request):
+    return render(request, 'main/maps/languages.html')
+def track(request):
+    return render(request, 'main/maps/track.html')
+def maps_other(request):
+    return render(request, 'main/maps/other.html')
 @login_required
 def profile_view(request):
     return render(request, 'main/profile/profile.html')

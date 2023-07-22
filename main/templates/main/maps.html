@@ -1,4 +1,5 @@
 {% extends 'main/layout.html' %}
+{% load static %}
 {% block title %}Дорожные карты{% endblock %}
 {% block content %}
 <div class="border">
@@ -13,134 +14,55 @@
 </div>
 <div class="container my-5">
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
-
-      {% load static %}
-      <a href = "{% static 'main/roadmaps/python.pdf' %}" target="_blank" >
+      <a href = "{% url 'language' %}" target="_self" >
     <div class="col-4">
       <div class="card">
         {% load static %}
         <img
-          src="{% static 'main/img/cards/python.png' %}"
+          src="{% static 'main/img/cards/languages.jpg' %}"
           class="card-img-top"
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">Python</h5>
+          <h3 class="card-title">Языки программирования</h3>
           <p class="card-text">
-            Высокоуровневый, интерпретируемый язык программирования, известный
-            своей простотой и читаемостью кода. Он идеально подходит для
-            начинающих программистов и тех, кто ценит лаконичность и быструю
-            разработку. Python часто используется в веб-разработке, анализе
-            данных, искусственном интеллекте и автоматизации задач.
+            Здесь вы найдете дорожные карты для различных языков программирования. Изучите популярные языки, такие как JavaScript, Python, Java, C#, Ruby и многие другие. Каждая дорожная карта поможет вам понять, с чего начать и как развиваться в выбранном языке программирования.
           </p>
         </div>
       </div>
     </div>
       </a>
-        {% load static %}
-      <a href = "{% static 'main/roadmaps/c++.pdf' %}" target="_blank" >
+      <a href = "{% url 'track' %}" target="_self" >
     <div class="col-4">
       <div class="card">
-        {% load static %}
         <img
-          src="{% static 'main/img/cards/c++.png' %}"
+          src="{% static 'main/img/cards/scecialisation.jpg' %}"
           class="card-img-top"
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">C++</h5>
+          <h3 class="card-title">Специализация</h3>
           <p class="card-text"></p>
           <p class="card-text">
-            Мощный язык программирования, используемый для разработки системного
-            и прикладного программного обеспечения, а также игр и
-            высокопроизводительных приложений. Он привлекает опытных
-            разработчиков, которые ценят полный контроль над памятью и высокую
-            производительность своего кода.
+            На этой странице вы найдете дорожные карты для различных специализаций в IT. Изучите пути "Backend developer", "Frontend developer", "DevOps Engineer" и другие. Каждая дорожная карта поможет вам определиться с выбором специализации и узнать, какие навыки и знания вам понадобятся, чтобы стать профессионалом в выбранной области.
           </p>
         </div>
       </div>
     </div>
       </a>
-        {% load static %}
-      <a href = "{% static 'main/roadmaps/c#.pdf' %}" target="_blank" >
+      <a href = "{% url 'other' %}" target="_self" >
     <div class="col-4">
       <div class="card">
-        {% load static %}
         <img
-          src="{% static 'main/img/cards/c#.png' %}"
+          src="{% static 'main/img/cards/cs.jpg' %}"
           class="card-img-top"
           alt="..."
         />
         <div class="card-body">
-          <h5 class="card-title">ASP .NET</h5>
+          <h3 class="card-title">Разное</h3>
           <p class="card-text"></p>
           <p class="card-text">
-            Платформа для веб-разработки от Microsoft, предоставляющая мощные
-            инструменты для создания динамических веб-приложений и веб-сайтов.
-            Он идеально подходит для разработчиков, которые хотят создавать
-            масштабируемые и безопасные веб-приложения с использованием языков
-            программирования C# или Visual Basic.
-          </p>
-        </div>
-      </div>
-    </div>
-      </a>
-  </div>
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 roww-2">
-      {% load static %}
-      <a href = "{% static 'main/roadmaps/java.pdf' %}" target="_blank" >
-    <div class="col-4">
-      <div class="card">
-        {% load static %}
-        <img
-          src="{% static 'main/img/cards/java.png' %}"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Java</h5>
-          <p class="card-text">
-            Объектно-ориентированный язык программирования, популярный для создания кросс-платформенных приложений. Он привлекает разработчиков, которые стремятся к надежности и стабильности своих программ. Java широко используется в разработке мобильных приложений, корпоративных приложений и встроенных систем.
-          </p>
-        </div>
-      </div>
-    </div>
-      </a>
-      {% load static %}
-      <a href = "{% static 'main/roadmaps/go.pdf' %}" target="_blank" >
-    <div class="col-4">
-      <div class="card">
-        {% load static %}
-        <img
-          src="{% static 'main/img/cards/go.png' %}"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Go</h5>
-          <p class="card-text"></p>
-          <p class="card-text">
-            Язык программирования, разработанный Google, который сочетает производительность C++ с простотой и безопасностью Python. Он идеально подходит для создания высокоэффективных сетевых и веб-серверных приложений, а также программного обеспечения для распределенных систем.
-          </p>
-        </div>
-      </div>
-    </div>
-      </a>
-      {% load static %}
-      <a href = "{% static 'main/roadmaps/javascript.pdf' %}" target="_blank" >
-    <div class="col-4">
-      <div class="card">
-        {% load static %}
-        <img
-          src="{% static 'main/img/cards/js.png' %}"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">JavaScript</h5>
-          <p class="card-text"></p>
-          <p class="card-text">
-            Язык программирования для веб-разработки, который добавляет интерактивность и динамические элементы на веб-страницы. Он идеально подходит для фронтенд-разработчиков, создающих интерактивные пользовательские интерфейсы и клиентские приложения. JavaScript также является неотъемлемой частью разработки современных веб-приложений и Single Page Applications (SPA).
+            Здесь вы найдете дорожные карты для различных тем, связанных с информатикой. Изучите области, такие как "Computer Science" и "SQL". Каждая дорожная карта поможет вам углубить знания в выбранной области и понять, какие уровни компетенции можно достичь.
           </p>
         </div>
       </div>

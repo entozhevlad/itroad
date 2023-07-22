@@ -1,17 +1,23 @@
 .card {
-  width: 400px; /* Установите ширину карточки */
+  width: 350px; /* Установите ширину карточки */
+    height: 600px;
   /*height: 600px; !* Установите высоту карточки *!*/
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden; /* Обрезать содержимое, чтобы изображение не выходило за пределы карточки */
   transition: transform 0.3s; /* Добавить переход при изменении трансформации */
+    flex: 1;
+  margin: 10px;
+    background-color: rgba(0,0,0,0.2);
 
 }
+
 .card img {
   width: 100%; /* Установите 100% ширины для изображения */
   height: 100%; /* Установите 100% высоты для изображения */
   object-fit: cover; /* Масштабируйте изображение, чтобы оно полностью заполнило блок img */
   border-radius: 5px; /* Добавьте закругление углов для изображения (по желанию) */
+
 }
 .card:hover {
   transform: scale(1.1); /* Увеличение карточки на 10% при наведении */
@@ -20,7 +26,11 @@
       margin-top: 20px; /* Задайте желаемый отступ сверху в пикселях (или другой единице измерения) */
 }
 a {
-    color: black;
+    color: white;
     text-decoration-line: none;
     text-align: justify;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
 }
