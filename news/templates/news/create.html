@@ -6,9 +6,8 @@
     <div class="container">
       <h1>Добавить статью</h1>
       <p>
-        На данной странцие публикуются статьи пользователей и новости из мира IT
+        Здесь вы можете добавить новую статью на сайт
       </p>
-        <a href ='{% url 'create' %}'><button class="btn btn-info"><i class=" fas fa-plus-circle"></i>Добавить</button></a>
     </div>
   </div>
 </div>
@@ -20,10 +19,9 @@
                 {{ form.anounce }}<br>
                 {{ form.full_text }}<br>
                 {{ form.date }}<br>
-                <span>{{ error }}</span>>
-                <button class="btn btn-access" type="submit">Добавить статью</button>
-            </form>>
-
+                <span>{{ error }}</span>
+                <button class="btn btn-info" type="submit" style="color: white; margin-top: 20px;">Добавить статью</button>
+            </form>
         </div>
     </div>
 {% endblock %}

@@ -1,12 +1,13 @@
 .alert-warning {
     float: left;
     clear: both;
-    width: 400px;
+    width: 800px;
     margin: 20px 34%;
     text-align: left;
 }
 
-form{
+form {
+
     margin-left: 32%;
     width: 500px;
     margin-bottom: 50px;

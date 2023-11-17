@@ -35,7 +35,7 @@
               <input type="password" name="password" placeholder="Password" />
               <a class="forgot text-muted" href="{% url 'password_reset' %}">Forgot password?</a>
                 <a class="forgot text-muted" href="{% url 'register' %}">No account? Sign up.</a>
-                {{ form.errors }}
+                <h5 style="color: red">{{ form.errors }}</h5>
               <input type="submit" name="" value="Login" href="#" />
               <div class="col-md-12">
 {#                <ul class="social-network social-circle">#}
